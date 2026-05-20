@@ -797,7 +797,7 @@ premium safety.
           
           <div className="col-lg-6 offset-lg-1">
             <div className="driver-card shadow-sm">
-              <div className="d-flex align-items-center gap-4 mb-4">
+              <div className="d-flex align-items-center md:gap-4 mb-4">
                 <div className="driver-image-container">
                   <Image src="/driver.png" width={90} height={90} alt="Rajesh Kumar" className="img-fluid" />
                 </div>

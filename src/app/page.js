@@ -214,7 +214,7 @@ export default function Home() {
                 key={item}
               >
                 <img
-                  src="/images/car-icon.png"
+                  src="/Images/car-icon.png"
                   alt=""
                 />
 
@@ -520,7 +520,7 @@ premium safety.
           <div
             className="service-bg"
             style={{
-              backgroundImage: "url('/images/car-11.png')"
+              backgroundImage: "url('/Images/car-11.png')"
             }}
           />
 
@@ -567,7 +567,7 @@ premium safety.
               <div
                 className="service-bg"
                 style={{
-                  backgroundImage: "url('/images/car-22.png')"
+                  backgroundImage: "url('/Images/car-22.png')"
                 }}
               />
 
@@ -591,7 +591,7 @@ premium safety.
               <div
                 className="service-bg"
                 style={{
-                  backgroundImage: "url('/images/car-3.png')"
+                  backgroundImage: "url('/Images/car-3.png')"
                 }}
               />
 
@@ -619,7 +619,7 @@ premium safety.
           <div
             className="service-bg"
             style={{
-              backgroundImage:"url('/images/car-4.png')"
+              backgroundImage:"url('/Images/car-4.png')"
             }}
           />
 
@@ -645,7 +645,7 @@ premium safety.
           <div
             className="service-bg"
             style={{
-              backgroundImage:"url('/images/car-6.png')"
+              backgroundImage:"url('/Images/car-6.png')"
             }}
           />
 
@@ -671,7 +671,7 @@ premium safety.
           <div
             className="service-bg"
             style={{
-              backgroundImage:"url('/images/car-8.png')"
+              backgroundImage:"url('/Images/car-8.png')"
             }}
           />
 

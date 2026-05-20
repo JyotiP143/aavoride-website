@@ -45,7 +45,7 @@ body {
   background-color: #eecfbb;
   background-image:
     linear-gradient(to right, #f4dccdeb 0%, #f4dccd47 45%, #f4dccdbf 100%),
-    url(/images/car-main-img.png);
+    url(/Images/car-main-img.png);
   background-repeat: no-repeat, no-repeat;
   background-size:
     100% 0%,

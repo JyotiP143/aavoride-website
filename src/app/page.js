@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import Header from "../app/components/header";
 
 export default function Home() {
   return (
@@ -63,14 +62,11 @@ export default function Home() {
                 </div>
             </header>
 
-            {/* HERO SECTION */}
-
           <section className="hero-section">
   <div className="container py-4  py-md-5 py-lg-5 mainpage-prop">
 
     <div className="row g-5">
 
-      {/* LEFT SIDE */}
       <div className="col-lg-7 m-0">
 
         <div className="trust-badge">
@@ -132,10 +128,6 @@ export default function Home() {
         </div>
 
       </div>
-
-
-      {/* RIGHT SIDE */}
-
       <div className="col-lg-5 m-0">
 
         <div className="trip-card">
@@ -269,14 +261,6 @@ export default function Home() {
 
   </div>
 </section>
-
-
-
-
-
-
-            {/* STATS SECTION */}
-
 <section
   className="py-5"
   style={{
@@ -326,10 +310,6 @@ export default function Home() {
   </div>
 </section>
 
-
-
-{/* WHY AAVORIDE SMARTER */}
-
 <section className="py-5">
 
 <div className="container">
@@ -362,8 +342,6 @@ traditional cab bookings.
 
 
 <div className="row g-5">
-
-{/* LEFT */}
 
 <div className="col-lg-6">
 
@@ -515,12 +493,9 @@ premium safety.
 </div>
 
 </section>
-
-      {/* Travel Solutions Section */}
        <section className="travel-services py-5">
   <div className="container">
 
-    {/* Heading */}
     <div className="text-center mb-5">
       <span className="service-badge">Services</span>
 
@@ -536,10 +511,8 @@ premium safety.
       <div className="title-line"></div>
     </div>
 
-    {/* Main Grid */}
     <div className="row g-4">
 
-      {/* LEFT BIG CARD */}
       <div className="col-lg-8">
 
         <div className="service-card large-card">
@@ -584,9 +557,6 @@ premium safety.
         </div>
 
       </div>
-
-
-      {/* RIGHT COLUMN */}
       <div className="col-lg-4">
 
         <div className="row g-4">
@@ -641,9 +611,6 @@ premium safety.
         </div>
 
       </div>
-
-
-      {/* Bottom Row */}
 
       <div className="col-md-4">
 
@@ -725,8 +692,6 @@ premium safety.
     </div>
   </div>
 </section>
-
-      {/* 4 Simple Steps Section */}
       <section className="container py-5 text-center">
         <h2 className="fw-bold mb-5">Your Journey in 4 Simple Steps</h2>
         <div className="row position-relative">
@@ -767,8 +732,6 @@ premium safety.
           </div>
         </div>
       </section>
-
-      {/* Our Drivers Section */}
       <section className="container py-5">
         <div className="row align-items-center">
           <div className="col-lg-5 mb-5 mb-lg-0">
@@ -849,7 +812,6 @@ premium safety.
           </div>
         </div>
       </section>
-      {/* App Download Section */}
       <section className="container py-5 mb-5">
         <div className="row align-items-center">
           <div className="col-md-6 mb-5 mb-md-0 text-center">
@@ -932,7 +894,6 @@ premium safety.
           </div>
         </div>
       </section>
-   {/* Stories From Our Travelers */}
       <section className="container py-5 bg-light-pink rounded-4 px-4 my-5" style={{background: '#f9f9f9'}}>
         <h2 className="fw-bold text-center mb-5">Stories from Our Travelers</h2>
         <div className="row g-4">
@@ -989,7 +950,6 @@ premium safety.
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="footer-section">
         <div className="container">
           <div className="row mb-5">

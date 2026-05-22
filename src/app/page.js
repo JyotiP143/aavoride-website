@@ -1,12 +1,15 @@
+import {
+  BadgeCheck, CalendarDays, CarFront, ChevronDown, Clock3, MapPin,
+  Navigation, User
+} from "lucide-react";
 import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="container-fluid px-0 container-overflow">
    <header className="navbar navbar-expand-lg bg-white py-4 border-bottom">
                 <div className="container">
 
-                    <a className="navbar-brand fw-bold fs-1 text-danger">
+                    <a className="navbar-brand fs-1 text-danger fontfami">
                         AAVORide
                     </a>
 
@@ -51,10 +54,11 @@ export default function Home() {
                     </div>
 
                     <button
-                        className="btn rounded-pill px-4 py-3 text-white"
+                        className="btn rounded-pill px-4 py-2 text-white"
                         style={{
                             background: "#ff4d21",
-                            fontWeight: "600"
+                            fontWeight: "600",
+                            fontsize: "17px"
                         }}
                     >
                         Join as AAVoRider Partner
@@ -68,11 +72,12 @@ export default function Home() {
     <div className="row g-5">
 
       <div className="col-lg-7 m-0">
-
-        <div className="trust-badge">
-          ⚙ India's Most Trusted Outstation Network
-        </div>
-
+<div className="trust-badge">
+  <span className="badge-icon">
+    <BadgeCheck size={14} strokeWidth={2.5} />
+  </span>
+  India's Most Trusted Outstation Network
+</div>
         <h1 className="hero-title mt-4">
           India's Smarter
           <br />
@@ -128,134 +133,279 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="col-lg-5 m-0">
 
-        <div className="trip-card">
+<div className="col-lg-5 col-md-10 col-sm-12 mx-auto m-0">
 
-          <div className="trip-icon">
-            🚗
-          </div>
+  <div className="trip-card">
 
-          <h2>
-            Plan Your Trip
-          </h2>
+    {/* Floating Icon */}
 
-          <div className="trip-tabs">
+    <div className="trip-floating-icon">
+      <CarFront
+        size={24}
+        color="white"
+        strokeWidth={2.5}
+      />
+    </div>
 
-            <span className="active">
-              One Way
-            </span>
+    <h2 className="trip-title">
+      Plan Your Trip
+    </h2>
 
-            <span>
-              Round Trip
-            </span>
+    <div className="trip-tabs">
 
-          </div>
+      <span className="active">
+        One Way
+      </span>
 
-          <input
-            type="text"
-            className="form-control custom-input"
-            placeholder="📍 Enter City or Airport"
-          />
+      <span>
+        Round Trip
+      </span>
 
-          <input
-            type="text"
-            className="form-control custom-input"
-            placeholder="📌 Where are you heading?"
-          />
+    </div>
 
-          <div className="row g-3">
 
-            <div className="col-6">
-              <input
-                type="date"
-                className="form-control custom-input"
-              />
-            </div>
+    {/* Pickup */}
 
-            <div className="col-6">
-              <input
-                type="time"
-                className="form-control custom-input"
-              />
-            </div>
+    <div className="input-group-custom">
 
-          </div>
+      <label>
+        Pickup Location
+      </label>
 
-          <select
-            className="form-select custom-input mt-3"
-          >
-            <option>
-              1 Passenger
-            </option>
+      <div className="icon-input">
 
-            <option>
-              2 Passenger
-            </option>
+        <MapPin
+          size={18}
+          color="#FF4A1F"
+          strokeWidth={2}
+        />
 
-            <option>
-              4 Passenger
-            </option>
+        <input
+          type="text"
+          placeholder="Enter City or Airport"
+        />
 
-          </select>
+      </div>
 
-          <div className="vehicle-grid">
+    </div>
 
-            {[
-              "Hatchback",
-              "Sedan",
-              "SUV",
-              "Comfort Van",
-              "Innova"
-            ].map((item) => (
 
-              <div
-                className="vehicle-item"
-                key={item}
-              >
-                <img
-                  src="/Images/car-icon.png"
-                  alt=""
-                />
 
-                <small>{item}</small>
-              </div>
+    {/* Destination */}
 
-            ))}
+    <div className="input-group-custom">
 
-          </div>
+      <label>
+        Destination
+      </label>
 
-          <p className="recommend-text">
-            RECOMMENDED FOR YOU
-          </p>
+      <div className="icon-input">
 
-          <div className="recommend-box">
+        <Navigation
+          size={18}
+          color="#808080"
+          strokeWidth={2}
+        />
 
-            <div>
+        <input
+          type="text"
+          placeholder="Where are you heading?"
+        />
 
-              <h6>
-                Premium Sedan
-              </h6>
+      </div>
 
-              <small>
-                Honda City or similar
-              </small>
+    </div>
 
-            </div>
 
-            <h5>
-              ₹12/km
-            </h5>
+
+    {/* Date + Time */}
+
+    <div className="row g-3">
+
+      <div className="col-md-6 col-12">
+
+        <div className="input-group-custom">
+
+          <label>
+            Date
+          </label>
+
+          <div className="icon-input">
+
+            <CalendarDays
+              size={18}
+              color="#808080"
+            />
+
+            <input
+              type="date"
+            />
 
           </div>
-
-          <button className="search-btn">
-            Search Cabs
-          </button>
 
         </div>
 
       </div>
+
+
+      <div className="col-md-6 col-12">
+
+        <div className="input-group-custom">
+
+          <label>
+            Time
+          </label>
+
+          <div className="icon-input">
+
+            <Clock3
+              size={18}
+              color="#808080"
+            />
+
+            <input
+              type="time"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    {/* Travellers */}
+
+    <div className="input-group-custom mt-3">
+
+      <label>
+        Travellers
+      </label>
+
+      <div className="icon-input">
+
+        <User
+          size={18}
+          color="#808080"
+        />
+
+        <select>
+
+          <option>
+            1 Passenger
+          </option>
+
+          <option>
+            2 Passenger
+          </option>
+
+          <option>
+            4 Passenger
+          </option>
+
+        </select>
+
+        <ChevronDown
+          size={18}
+          color="#808080"
+        />
+
+      </div>
+
+    </div>
+
+
+    {/* Vehicle Grid */}
+
+    <div className="vehicle-grid">
+
+      {[
+        "Hatchback",
+        "Sedan",
+        "SUV",
+        "Comfort Van",
+        "Innova"
+      ].map((item) => (
+
+        <div  className="vehicle-main"
+          key={item}
+        >
+
+         <div className="vehicle-item">
+           <img
+            src="Images\rightSide-carimg.png"
+            alt=""
+          />
+          </div>
+
+          <small>
+            {item}
+          </small>
+
+        </div>
+
+      ))}
+
+    </div>
+
+
+
+    <p className="recommend-text">
+      RECOMMENDED FOR YOU
+    </p>
+
+
+    <div className="recommend-box">
+
+      <div className="recommend-left">
+
+        <img
+          src="Images\car-11.png"
+          alt=""
+        />
+
+        <div>
+
+          <h6>
+            Premium Sedan
+          </h6>
+
+          <small>
+            Honda City or similar
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h5>
+          ₹12/km
+        </h5>
+
+        <small>
+          Fastest Response
+        </small>
+
+      </div>
+
+    </div>
+
+
+
+    <button className="search-btn">
+      Search Cabs
+    </button>
+
+  </div>
+
+</div>
 
     </div>
 

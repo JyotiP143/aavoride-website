@@ -126,8 +126,8 @@ export default function Home() {
 
           </div>
 
-          <span>
-            ⭐ <b>4.9/5 Rating</b> from 50k+ Happy Travelers
+          <span className="rating">
+            ⭐ <b className="rating-bold">4.9/5 Rating</b> from 50k+ Happy Travelers
           </span>
 
         </div>
@@ -840,8 +840,11 @@ premium safety.
       </div>
 
     </div>
+    
   </div>
 </section>
+
+
       <section className="container py-5 text-center">
         <h2 className="fw-bold mb-5">Your Journey in 4 Simple Steps</h2>
         <div className="row position-relative">
@@ -854,15 +857,22 @@ premium safety.
               <div className="step-number step-active">1</div>
             </div>
             <h5 className="fw-bold">Enter Destination</h5>
-            <p className="text-gray small px-3">Tell us where you want to go and when you want to start.</p>
+            <p className="text-gray small px-5">Tell us where you want to go and when you want to start.</p>
           </div>
           <div className="col-md-3 mb-4 mb-md-0">
             <div className="step-icon-wrapper">
-              <i className="bi bi-arrows-expand step-icon"></i>
+          <i
+  className="bi bi-arrow-left-right step-icon"
+  style={{
+    fontSize: "16px",
+    fontWeight: "800",
+    color: "#000"
+  }}
+></i>
               <div className="step-number text-gray bg-light">2</div>
             </div>
             <h5 className="fw-bold">Compare Cabs</h5>
-            <p className="text-gray small px-3">Choose from a fleet of hatchbacks, sedans, and premium SUVs.</p>
+            <p className="text-gray small px-5">Choose from a fleet of hatchbacks, sedans, and premium SUVs.</p>
           </div>
           <div className="col-md-3 mb-4 mb-md-0">
             <div className="step-icon-wrapper">
@@ -870,7 +880,7 @@ premium safety.
               <div className="step-number text-gray bg-light">3</div>
             </div>
             <h5 className="fw-bold">Instant Booking</h5>
-            <p className="text-gray small px-3">Confirm with a small advance or pay later in full.</p>
+            <p className="text-gray small px-5">Confirm with a small advance or pay later in full.</p>
           </div>
           <div className="col-md-3">
             <div className="step-icon-wrapper">
@@ -878,12 +888,12 @@ premium safety.
               <div className="step-number text-gray bg-light">4</div>
             </div>
             <h5 className="fw-bold">Travel Comfortably</h5>
-            <p className="text-gray small px-3">Experience the premium hospitality of AAVORide.</p>
+            <p className="text-gray small px-5">Experience the premium hospitality of AAVORide.</p>
           </div>
         </div>
       </section>
-      <section className="container py-5">
-        <div className="row align-items-center">
+      <section className="container py-5 car-heros">
+        <div className="row align-items-center car-heross">
           <div className="col-lg-5 mb-5 mb-lg-0">
             <h2 className="fw-bold mb-4">Our Drivers are our Heroes</h2>
             <p className="text-gray mb-4">Every AAVORide driver undergoes a rigorous 5-step verification process, background checks, and hospitality training.</p>
@@ -953,98 +963,168 @@ premium safety.
                   </div>
                 </div>
               </div>
-              
-              <div className="quote-box">
-                <div className="text-gray fst-italic">"Ensuring every traveler reaches their destination with a smile."</div>
-                <div className="quote-icon">"</div>
-              </div>
+             
+              <div className="quote-box position-relative">
+  <div className="text-gray fst-italic">
+    "Ensuring every traveler reaches their destination with a smile."
+  </div>
+
+<div className="quote-icon">❞</div>
+</div>
             </div>
           </div>
         </div>
       </section>
-      <section className="container py-5 mb-5">
-        <div className="row align-items-center">
-          <div className="col-md-6 mb-5 mb-md-0 text-center">
-            <div className="app-mockup">
-              <div className="d-flex justify-content-between align-items-center mb-3 text-primary">
-                <span className="fw-bold small">AAVORide</span>
-                <i className="bi bi-bell"></i>
-              </div>
-              <div className="bg-light rounded-4 w-100 mb-3 d-flex align-items-center justify-content-center text-primary" style={{height: '180px', backgroundColor: '#eef2ff !important'}}>
-                <div className="small fw-bold">Live Map View</div>
-              </div>
-              <div className="d-flex justify-content-between mb-4 border-bottom pb-3">
-                <span className="small fw-bold">Trip ID: #AAVO784</span>
-                <span className="small text-primary">OTP: 4521</span>
-              </div>
-              <div className="bg-light rounded-3 w-100 mb-2" style={{height: '40px'}}></div>
-              <div className="bg-light rounded-3 w-100 mb-2" style={{height: '40px'}}></div>
-              
-              <div className="floating-badge left">
-                <div className="icon-circle">
-                  <i className="bi bi-share"></i>
-                </div>
-                Live Link Shared
-              </div>
-              <div className="floating-badge right">
-                <div className="icon-circle green">
-                  <i className="bi bi-check2"></i>
-                </div>
-                Payment Success
-              </div>
+
+
+
+<section className="app-section py-5">
+  <div className="container">
+    <div className="row align-items-center">
+
+      {/* LEFT PHONE */}
+      <div className="col-lg-6 text-center mb-5 mb-lg-0">
+
+        <div className="phone-wrapper">
+
+          <div className="app-mockup">
+
+            <div className="top-header">
+              <span>AAVORide</span>
+              <i className="bi bi-bell"></i>
             </div>
+
+            <div className="map-area">
+              <span>Live Map View</span>
+
+              <div className="driver-tag">
+                <span className="dot"></span>
+                Driver is 2 mins away
+              </div>
+
+            </div>
+
+            <div className="trip-info">
+              <span>Trip ID: #AAVO784</span>
+              <span className="otp">OTP: 4521</span>
+            </div>
+
+            <div className="divider"></div>
+
+            <div className="location-row">
+              <i className="bi bi-record-circle"></i>
+              <div className="line-box"></div>
+            </div>
+
+            <div className="location-row">
+              <i className="bi bi-geo-alt"></i>
+              <div className="line-box"></div>
+            </div>
+
           </div>
-          <div className="col-md-6 px-4">
-            <h2 className="fw-bold mb-3">Control Your Journey from Your Pocket</h2>
-            <p className="text-gray mb-4" style={{lineHeight: '1.8'}}>
-              Our cutting-edge app offers real-time tracking, SOS security features, and one-tap booking history. Share your live location with family for absolute peace of mind.
-            </p>
-            
-            <div className="row mb-5">
-              <div className="col-sm-6 mb-4 mb-sm-0">
-                <div className="d-flex align-items-start gap-3">
-                  <div className="icon-circle" style={{width: '40px', height: '40px'}}>
-                    <i className="bi bi-geo-alt-fill"></i>
-                  </div>
-                  <div>
-                    <h6 className="fw-bold mb-1">Live Tracking</h6>
-                    <p className="text-gray small mb-0">Precisely track your ride's ETA.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="d-flex align-items-start gap-3">
-                  <div className="icon-circle" style={{width: '40px', height: '40px'}}>
-                    <i className="bi bi-shield-lock-fill"></i>
-                  </div>
-                  <div>
-                    <h6 className="fw-bold mb-1">SOS Safety</h6>
-                    <p className="text-gray small mb-0">Instant emergency assistance.</p>
-                  </div>
-                </div>
-              </div>
+
+          {/* Floating cards */}
+
+          <div className="floating-card left-card">
+            <div className="icon-circle">
+              <i className="bi bi-share"></i>
             </div>
-            
-            <div className="d-flex gap-3">
-              <button className="btn btn-dark rounded-pill px-4 py-2 d-flex align-items-center gap-2">
-                <i className="bi bi-google-play fs-4"></i>
-                <div className="text-start">
-                  <div style={{fontSize: '0.65rem', lineHeight: '1'}}>Get it on</div>
-                  <div className="fw-bold" style={{lineHeight: '1'}}>Google Play</div>
-                </div>
-              </button>
-              <button className="btn btn-dark rounded-pill px-4 py-2 d-flex align-items-center gap-2">
-                <i className="bi bi-apple fs-4"></i>
-                <div className="text-start">
-                  <div style={{fontSize: '0.65rem', lineHeight: '1'}}>Download on the</div>
-                  <div className="fw-bold" style={{lineHeight: '1'}}>App Store</div>
-                </div>
-              </button>
-            </div>
+
+            <span>Live Link Shared</span>
           </div>
+
+          <div className="floating-card right-card">
+
+            <div className="icon-circle success">
+              <i className="bi bi-check2"></i>
+            </div>
+
+            <span>Payment Success</span>
+
+          </div>
+
         </div>
-      </section>
-      <section className="container py-5 bg-light-pink rounded-4 px-4 my-5" style={{background: '#f9f9f9'}}>
+
+      </div>
+
+      {/* RIGHT CONTENT */}
+
+      <div className="col-lg-6">
+
+        <h1 className="journey-title">
+          Control Your Journey from Your Pocket
+        </h1>
+
+        <p className="journey-text">
+          Our cutting-edge app offers real-time tracking,
+          SOS security features, and one-tap booking history.
+          Share your live location with family for absolute
+          peace of mind.
+        </p>
+
+
+        <div className="feature-row">
+
+          <div className="feature-item">
+            <div className="feature-icon">
+              <i className="bi bi-geo-alt-fill"></i>
+            </div>
+
+            <div>
+              <h6>Live Tracking</h6>
+              <p>Precisely track your ride's ETA.</p>
+            </div>
+          </div>
+
+          <div className="feature-item">
+            <div className="feature-icon">
+              <i className="bi bi-shield-lock-fill"></i>
+            </div>
+
+            <div>
+              <h6>SOS Safety</h6>
+              <p>Instant emergency assistance.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div className="store-buttons">
+
+          <button className="store-btn">
+
+            <i className="bi bi-google-play"></i>
+
+            <div>
+              <small>Get it on</small>
+              <span>Google Play</span>
+            </div>
+
+          </button>
+
+
+          <button className="store-btn">
+
+            <i className="bi bi-apple"></i>
+
+            <div>
+              <small>Download on the</small>
+              <span>App Store</span>
+            </div>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      <section className="container py-5 rounded-4 px-4 my-5">
         <h2 className="fw-bold text-center mb-5">Stories from Our Travelers</h2>
         <div className="row g-4">
           <div className="col-md-4">
@@ -1052,7 +1132,15 @@ premium safety.
               <div className="star-rating">★★★★★</div>
               <p className="review-text">"AAVORide has transformed my monthly Bangalore-Chennai trips. The cars are spotless, and the drivers are incredibly professional. Best outstation experience in India!"</p>
               <div className="d-flex align-items-center gap-3">
-                <div className="bg-secondary rounded-circle" style={{width:'45px', height:'45px'}}></div>
+          <div className="user-avatar">
+      <img className="img-stories"
+        src="https://randomuser.me/api/portraits/women/2.jpg"
+        alt=""
+      />
+    </div>
+
+
+
                 <div>
                   <h6 className="fw-bold mb-0">Ananya Sharma</h6>
                   <small className="text-gray">Frequent Traveler</small>
@@ -1065,7 +1153,12 @@ premium safety.
               <div className="star-rating">★★★★★</div>
               <p className="review-text">"Booking was seamless. I used them for a family trip to Ooty. The Innova was well-maintained and the driver knew the terrain perfectly. Highly recommended for families."</p>
               <div className="d-flex align-items-center gap-3">
-                <div className="bg-secondary rounded-circle" style={{width:'45px', height:'45px'}}></div>
+                        <div className="user-avatar">
+    <img className="img-stories"
+      src="https://randomuser.me/api/portraits/men/1.jpg"
+      alt=""
+    />
+  </div>
                 <div>
                   <h6 className="fw-bold mb-0">Vikram Malhotra</h6>
                   <small className="text-gray">Tech Executive</small>
@@ -1078,7 +1171,12 @@ premium safety.
               <div className="star-rating">★★★★★</div>
               <p className="review-text">"Transparent pricing is the best part. I knew exactly what I was paying before the trip started. No haggling with the driver for tolls. Truly premium."</p>
               <div className="d-flex align-items-center gap-3">
-                <div className="bg-secondary rounded-circle" style={{width:'45px', height:'45px'}}></div>
+          <div className="user-avatar">
+      <img className="img-stories"
+        src="https://randomuser.me/api/portraits/women/2.jpg"
+        alt=""
+      />
+    </div>
                 <div>
                   <h6 className="fw-bold mb-0">Priya Das</h6>
                   <small className="text-gray">Digital Nomad</small>
